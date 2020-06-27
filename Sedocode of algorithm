@@ -1,0 +1,20 @@
+Technology used: Bluetooth beacon MAC address
+
+Mechanism of use and stages of work :
+
+1- The application starts by locating the meeting room in order to interact with the robot and uses the open cv library in order to take pictures of people 
+and identify them.
+
+2- The location of each person inside the hall is determined. 
+
+3- Using the technology the number of people and the extent of their affinity are calculated.
+
+4- If  The number of very close people is more than 10 The application sends a signal to display the information and to verify it. 
+
+5- A voice is issued from the robot to warn of the need for spacing. 
+
+6- The application sends the data to the server to be processed. 
+
+7- The beacon data is saved in the database. 
+
+8- Except that if the number of  people closest in the meeting room are less than 10, the robot will not issue any commands and will complete the hall observation.
